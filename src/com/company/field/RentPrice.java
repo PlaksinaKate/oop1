@@ -1,13 +1,13 @@
 package com.company.field;
 
 public class RentPrice {
-    private int rentWithoutBuildings, oneHouse, twoHouse, threeHouse, rentWithHotel;
+    private int rentWithoutBuildings, oneHouse, twoHouses, threeHouses, rentWithHotel;
 
-    public RentPrice(int rentWithoutBuildings, int oneHouse, int twoHouse, int threeHouse, int rentWithHotel) {
+    public RentPrice(int rentWithoutBuildings, int oneHouse, int twoHouses, int threeHouses, int rentWithHotel) {
         this.rentWithoutBuildings = rentWithoutBuildings;
         this.oneHouse = oneHouse;
-        this.twoHouse = twoHouse;
-        this.threeHouse = threeHouse;
+        this.twoHouses = twoHouses;
+        this.threeHouses = threeHouses;
         this.rentWithHotel = rentWithHotel;
     }
 }
