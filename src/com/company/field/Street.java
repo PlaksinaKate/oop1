@@ -20,5 +20,54 @@ public class Street extends Field {
         this.rentPrice = rentPrice;
         this.player = player;
     }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public int getHousePrice() {
+        return housePrice;
+    }
+
+    public int getHotelPrice() {
+        return hotelPrice;
+    }
+
+    public RentPrice getRentPrice() {
+        return rentPrice;
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setHousePrice(int housePrice) {
+        this.housePrice = housePrice;
+    }
+
+    public void setHotelPrice(int hotelPrice) {
+        this.hotelPrice = hotelPrice;
+    }
+
+    public void setRentPrice(RentPrice rentPrice) {
+        this.rentPrice = rentPrice;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
 }
+
 

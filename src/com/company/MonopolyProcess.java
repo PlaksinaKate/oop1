@@ -8,8 +8,9 @@ import com.company.util.CircleList;
 
 import java.awt.*;
 
-public class AddInform {
+public class MonopolyProcess {
     private static CircleList<Field> field;
+
 
     public static void addField() {
         field.add(new Field("Старт", 1));
