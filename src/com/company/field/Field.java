@@ -14,6 +14,7 @@ public class Field implements Comparable<Field> {
         this.numberOfField = numberOfField;
     }
 
+
     public String getName() {
         return name;
     }
