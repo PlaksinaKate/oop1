@@ -1,8 +1,8 @@
 package com.company;
 
-import com.company.field.Chance;
+import com.company.cards.Chance;
 import com.company.field.Field;
-import com.company.field.Treasury;
+import com.company.cards.Treasury;
 import java.util.LinkedList;
 import java.util.Queue;
 

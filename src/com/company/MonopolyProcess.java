@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.cards.Chance;
+import com.company.cards.Treasury;
 import com.company.field.*;
 
 import java.awt.*;

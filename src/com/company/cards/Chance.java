@@ -1,4 +1,4 @@
-package com.company.field;
+package com.company.cards;
 
 public class Chance {
     private String text;
