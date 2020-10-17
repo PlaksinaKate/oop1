@@ -10,20 +10,8 @@ public class Field implements Comparable<Field> {
     }
 
 
-    public String getName() {
-        return name;
-    }
-
     public int getNumberOfField() {
         return numberOfField;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setNumberOfField(int numberOfField) {
-        this.numberOfField = numberOfField;
     }
 
     @Override
