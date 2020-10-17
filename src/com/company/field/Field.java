@@ -8,7 +8,6 @@ public class Field  {
         this.name = name;
         this.numberOfField = numberOfField;
     }
-
 }
 
 

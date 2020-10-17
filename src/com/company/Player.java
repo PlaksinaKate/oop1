@@ -5,12 +5,12 @@ import com.company.field.Street;
 import java.util.ArrayList;
 
 public class Player {
-    private int playerNumber;
+    private String playerNumber;
     private int money;
     private int location;
     private ArrayList<Street> allStreets;
 
-    public Player(int playerNumber, int money, int location, ArrayList<Street> allStreets) {
+    public Player(String playerNumber, int money, int location, ArrayList<Street> allStreets) {
         this.playerNumber = playerNumber;
         this.money = money;
         this.location = location;
@@ -20,10 +20,10 @@ public class Player {
 
     public Player() {
 
-        this(0, 0, 0, null);
+        this(null, 0, 0, null);
     }
 
-    public void setPlayerNumber(int playerNumber) {
+    public void setPlayerNumber(String playerNumber) {
         this.playerNumber = playerNumber;
     }
 
@@ -31,7 +31,7 @@ public class Player {
         this.money = money;
     }
 
-    public int getPlayerNumber() {
+    public String getPlayerNumber() {
         return playerNumber;
     }
 

@@ -1,15 +1,12 @@
 package com.company.cards;
 
-public class Chance {
-    private String text;
-    private int money;
+public class Chance extends Cards{
     private int numberOfFieldWherePlayerNeedToGo;
 
-    public Chance(String text, int money, int numberOfFieldWherePlayerNeedToGo) {
-        this.text = text;
-        this.money = money;
-        this.numberOfFieldWherePlayerNeedToGo = numberOfFieldWherePlayerNeedToGo;
+    public Chance(String text, int moneyPlus, int moneyMinus) {
+        super(text, moneyPlus, moneyMinus);
     }
+
 
     public int getNumberOfFieldWherePlayerNeedToGo() {
         return numberOfFieldWherePlayerNeedToGo;
