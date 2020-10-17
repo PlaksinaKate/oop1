@@ -1,6 +1,6 @@
 package com.company.field;
 
-public class Field implements Comparable<Field> {
+public class Field  {
     private String name;
     private int numberOfField;
 
@@ -9,15 +9,6 @@ public class Field implements Comparable<Field> {
         this.numberOfField = numberOfField;
     }
 
-
-    public int getNumberOfField() {
-        return numberOfField;
-    }
-
-    @Override
-    public int compareTo(Field field) {
-        return this.getNumberOfField() - field.getNumberOfField();
-    }
 }
 
 
