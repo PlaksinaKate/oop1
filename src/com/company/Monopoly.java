@@ -3,23 +3,22 @@ package com.company;
 import com.company.field.Chance;
 import com.company.field.Field;
 import com.company.field.Treasury;
-import com.company.util.CircleList;
-
-import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Monopoly {
     private MonopolyProcess monopolyProcess;
-    private CircleList<Field> field;
-    private CircleList<Treasury> treasury;
-    private CircleList<Chance> chance;
-    private ArrayList<Player> players;
+    private LinkedList<Field> field;
+    private LinkedList<Treasury> treasury;
+    private LinkedList<Chance> chance;
+    private Queue<Player> players;
 
     public Monopoly() {
         monopolyProcess = new MonopolyProcess();
-        field = new CircleList<>();
-        treasury = new CircleList<>();
-        chance = new CircleList<>();
-        players = new ArrayList<>();
+        field = new LinkedList<>();
+        treasury = new LinkedList<>();
+        chance = new LinkedList<>();
+        players = new LinkedList<>();
     }
 
     public void setUpMonopoly() {
@@ -30,8 +29,16 @@ public class Monopoly {
     }
 
     public void playMonopoly() {
-        while (monopolyProcess.isGameOver(players)) {
+        while (!monopolyProcess.isGameOver(players)) {
+            for (Player player : players) {
+                System.out.println("Ход игрока номер: " + player.getPlayerNumber());
+                System.out.println(player.toString()); // все свойства игрока
 
+
+
+
+
+            }
         }
     }
 

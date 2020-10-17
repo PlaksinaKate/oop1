@@ -8,12 +8,4 @@ public class Treasury {
         this.text = text;
         this.money = money;
     }
-
-    public int getMoney() {
-        return money;
-    }
-
-    public String getText() {
-        return text;
-    }
 }

@@ -1,10 +1,5 @@
 package com.company.field;
 
-import com.company.Player;
-
-import javax.swing.Action;
-import java.awt.*;
-
 public class Field implements Comparable<Field> {
     private String name;
     private int numberOfField;

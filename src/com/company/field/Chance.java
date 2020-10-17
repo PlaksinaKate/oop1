@@ -11,14 +11,6 @@ public class Chance {
         this.numberOfFieldWherePlayerNeedToGo = numberOfFieldWherePlayerNeedToGo;
     }
 
-    public String getText() {
-        return text;
-    }
-
-    public int getMoney() {
-        return money;
-    }
-
     public int getNumberOfFieldWherePlayerNeedToGo() {
         return numberOfFieldWherePlayerNeedToGo;
     }
