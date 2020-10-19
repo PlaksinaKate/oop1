@@ -17,17 +17,6 @@ public class Street extends Field {
         this.price = price;
     }
 
-    //    public boolean isHotelOwned() {
-//        return hotelOwned;
-//    }
-//
-//    public boolean isHouseOwned() {
-//        return houseOwned;
-//    }
-//
-//    public int getAmountOfHouses() {
-//        return amountOfHouses;
-//    }
 }
 
 

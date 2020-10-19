@@ -1,11 +1,10 @@
 package com.company.cards;
 
-public class Treasury {
-    private String text;
-    private int money;
+public class Treasury extends Cards{
+    private int moneyPlusOrMinus;
 
-    public Treasury(String text, Integer money) {
-        this.text = text;
-        this.money = money;
+    public Treasury(String text, int moneyPlusOrMinus) {
+        super(text);
+        this.moneyPlusOrMinus = moneyPlusOrMinus;
     }
 }
