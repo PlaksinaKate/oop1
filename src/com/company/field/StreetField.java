@@ -5,12 +5,12 @@ import com.company.field.price.Price;
 
 import java.awt.*;
 
-public class Street extends Field {
+public class StreetField extends Field {
     private Color color;
     private Player player;
     private Price price;
 
-    public Street(String name, int numberOfField, Color color, Player player, Price price) {
+    public StreetField(String name, int numberOfField, Color color, Player player, Price price) {
         super(name, numberOfField);
         this.color = color;
         this.player = player;

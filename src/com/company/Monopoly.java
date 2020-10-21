@@ -5,9 +5,7 @@ import com.company.field.Field;
 import com.company.cards.Treasury;
 import com.company.util.CircleList;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class Monopoly {
     private MonopolyProcess monopolyProcess;
@@ -15,6 +13,7 @@ public class Monopoly {
     private Stack<Treasury> treasury;
     private Stack<Chance> chance;
     private Queue<Player> players;
+    private Map<Player, Field> ownProperty;
 
     public Monopoly() {
         monopolyProcess = new MonopolyProcess();
@@ -22,12 +21,14 @@ public class Monopoly {
         treasury = new Stack<>();
         chance = new Stack<>();
         players = new LinkedList<>();
+        ownProperty = new HashMap<>();
     }
+
 
     public void setUpMonopoly() {
         monopolyProcess.addFields(field);
         monopolyProcess.addTreasury(treasury, players);
-        monopolyProcess.addChance(chance);
+        monopolyProcess.addChance(chance, field);
         monopolyProcess.addPlayers(players);
     }
 

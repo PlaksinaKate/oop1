@@ -20,16 +20,6 @@ public class CircleList<T> implements Iterator<T> {
         }
     }
 
-    public Element search(T el) {
-        Element element = head;
-        while (element != null) {
-            if (element.value.equals(el)) {
-                return element;
-            }
-            element = element.next;
-        }
-        return null;
-    }
 
     @Override
     public boolean hasNext() {
