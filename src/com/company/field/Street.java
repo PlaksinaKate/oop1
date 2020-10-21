@@ -17,6 +17,9 @@ public class Street extends Field {
         this.price = price;
     }
 
+    public Price getPrice() {
+        return price;
+    }
 }
 
 

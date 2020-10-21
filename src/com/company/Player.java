@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.field.Field;
 import com.company.field.Street;
 
 import java.util.ArrayList;
@@ -7,20 +8,19 @@ import java.util.ArrayList;
 public class Player {
     private String playerNumber;
     private int money;
-    private int location;
+    private Field location;
     private ArrayList<Street> allStreets;
 
-    public Player(String playerNumber, int money, int location, ArrayList<Street> allStreets) {
+    public Player(String playerNumber, int money, Field location, ArrayList<Street> allStreets) {
         this.playerNumber = playerNumber;
         this.money = money;
         this.location = location;
         this.allStreets = allStreets;
     }
 
-
     public Player() {
 
-        this(null, 0, 0, null);
+        this(null, 0, null, null);
     }
 
     public void setPlayerNumber(String playerNumber) {
@@ -39,7 +39,7 @@ public class Player {
         return money;
     }
 
-    public void setLocation(int location) {
+    public void setLocation(Field location) {
         this.location = location;
     }
 

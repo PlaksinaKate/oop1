@@ -9,4 +9,9 @@ public class Chance extends Cards{
         super(text);
         this.numberOfFieldWherePlayerNeedToGo = numberOfFieldWherePlayerNeedToGo;
     }
+
+    public Field getNumberOfFieldWherePlayerNeedToGo() {
+        return numberOfFieldWherePlayerNeedToGo;
+    }
 }
+

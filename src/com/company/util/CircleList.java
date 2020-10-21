@@ -1,6 +1,10 @@
 package com.company.util;
 
-public class CircleList<T> {
+import com.company.field.Field;
+
+import java.util.Iterator;
+
+public class CircleList<T> implements Iterator<T> {
     private Element head;
     private Element tail;
 
@@ -15,6 +19,28 @@ public class CircleList<T> {
             element.next = head;
         }
     }
+
+    public Element search(T el) {
+        Element element = head;
+        while (element != null) {
+            if (element.value.equals(el)) {
+                return element;
+            }
+            element = element.next;
+        }
+        return null;
+    }
+
+    @Override
+    public boolean hasNext() {
+        return false;
+    }
+
+    @Override
+    public T next() {
+        return null;
+    }
+
 
     class Element<T> {
         Element next;

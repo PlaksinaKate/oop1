@@ -8,6 +8,14 @@ public class Field  {
         this.name = name;
         this.numberOfField = numberOfField;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getNumberOfField() {
+        return numberOfField;
+    }
 }
 
 

@@ -8,4 +8,5 @@ public class RentPrice {
         this.rentPriceWithHouse = rentPriceWithHouse;
         this.rentPriceWithHotel = rentPriceWithHotel;
     }
+
 }
