@@ -156,7 +156,7 @@ public class MonopolyProcess {
         int count = 0;
         Map<Integer, Player> rating = new HashMap<>();
         for (Player player : players) {
-            for (Street street : player.getAllStreets()) {
+ //           for (Street street : player.getAllStreets()) {
 //                if (street.isHotelOwned()) {
 //                    addMoney(player, street.getPrice().getPrice() + street.getPrice().getPriceForNewBuildings() * 4);
 //                } else if (street.isHouseOwned()) {
@@ -164,7 +164,7 @@ public class MonopolyProcess {
 //                } else {
 //                    addMoney(player, street.getPrice().getPrice());
 //                }
-            }
+           // }
             if (highAmountOfMoney == player.getMoney()) {
                 count++;
                 rating.put(count, player);

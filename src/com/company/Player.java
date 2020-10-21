@@ -9,18 +9,15 @@ public class Player {
     private String playerNumber;
     private int money;
     private Field location;
-    private ArrayList<Street> allStreets;
 
-    public Player(String playerNumber, int money, Field location, ArrayList<Street> allStreets) {
+    public Player(String playerNumber, int money, Field location) {
         this.playerNumber = playerNumber;
         this.money = money;
-        this.location = location;
-        this.allStreets = allStreets;
-    }
+        this.location = location; }
 
     public Player() {
 
-        this(null, 0, null, null);
+        this(null, 0, null);
     }
 
     public void setPlayerNumber(String playerNumber) {
@@ -43,7 +40,5 @@ public class Player {
         this.location = location;
     }
 
-    public ArrayList<Street> getAllStreets() {
-        return allStreets;
-    }
+
 }
